@@ -1,0 +1,34 @@
+    $myColor:black;
+    body {
+        font-size: 24px;
+        .claz {
+            font-size: 50px;
+        }
+    }
+    
+    .page-context {
+        display: flex;
+        flex-direction: column;
+        padding: 0 5%;
+        p {
+            $myColor: blue;
+            font-size: 87px;
+            color: $myColor;
+            margin: 0;
+        }
+        &__list {
+            list-style: none;
+            padding-inline-start: 0;
+            li {
+                border: 1px solid grey;
+                padding: 56px 30px;
+                margin-bottom: 38px;
+                a {
+                    color: $myColor;
+                    font-size: 3rem;    
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
