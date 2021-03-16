@@ -1,34 +1,74 @@
-    $myColor:black;
-    body {
-        font-size: 24px;
-        .claz {
-            font-size: 50px;
+$myColor:black;
+body {
+    font-size: 24px;
+    .claz {
+        font-size: 50px;
+    }
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-inline-start: 50px;
+    margin-inline-end: 50px;
+    img {
+        width: 250px;
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    a {
+        text-decoration: none;
+        .join-button-radius {
+            background-color: white;
+            border: none;
+            color: gray;
+            margin-right: 30px;
+            margin-top: 40px;
+        }
+        .sign-button-radius {
+            color: rgb(37, 96, 207);
+            background-color: white;
+            border: 1px solid rgb(37, 96, 207);
+            margin-top: 30px;
+            min-width: 70px;
+            border-radius: 68px;
+            padding: 14px 36px;
+            cursor: pointer;
+            outline: none;
         }
     }
-    
-    .page-context {
-        display: flex;
-        flex-direction: column;
-        padding: 0 5%;
-        p {
-            $myColor: blue;
-            font-size: 87px;
-            color: $myColor;
-            margin: 0;
-        }
-        &__list {
-            list-style: none;
-            padding-inline-start: 0;
-            li {
-                border: 1px solid grey;
-                padding: 56px 30px;
-                margin-bottom: 38px;
-                a {
-                    color: $myColor;
-                    font-size: 3rem;    
-                    text-decoration: none;
-                    font-weight: bold;
-                }
+    button {
+        font-size: 47px;
+    }
+}
+
+.page-context {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    p {
+        $myColor: rgb(37, 96, 207);
+        font-size: 87px;
+        color: $myColor;
+        margin: 0;
+    }
+    &__list {
+        list-style: none;
+        padding-inline-start: 0;
+        li {
+            border: 1px solid grey;
+            padding: 56px 30px;
+            margin-bottom: 38px;
+            a {
+                color: $myColor;
+                font-size: 3rem;
+                text-decoration: none;
+                font-weight: bold;
             }
         }
     }
+}
